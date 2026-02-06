@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhaleStreet – Il Tuo Faro verso l'Indipendenza Finanziaria</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#001a2c',
+            accent: '#d63384',
+            'accent-light': '#e64994',
+          },
+          fontFamily: {
+            sans: ['Lexend', 'Inter', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            glow: '0 0 60px -15px rgba(214, 51, 132, 0.35)',
+            'glow-sm': '0 0 30px -10px rgba(214, 51, 132, 0.25)',
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .glass {
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .glow-bg {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      filter: blur(100px);
+      opacity: 0.2;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="font-sans bg-navy text-white antialiased min-h-screen">
+  <!-- Glow orbs -->
+  <div class="glow-bg bg-accent top-0 left-1/2 -translate-x-1/2 -translate-y-1/2" aria-hidden="true"></div>
+  <div class="glow-bg bg-accent top-1/3 -left-32 w-64 h-64" aria-hidden="true"></div>
+  <div class="glow-bg bg-accent bottom-1/4 -right-32 w-72 h-72" aria-hidden="true"></div>
+
+  <!-- Hero -->
+  <header class="relative pt-16 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <div class="max-w-5xl mx-auto text-center">
+      <div class="mb-8 flex justify-center">
+        <div class="glass-card rounded-2xl p-6 shadow-glow-sm">
+          <img src="https://placehold.co/320x200/1a3a52/ffffff?text=WhaleStreet" alt="WhaleStreet – Faro e rotta" class="rounded-xl w-full max-w-xs mx-auto object-cover" width="320" height="200">
+        </div>
+      </div>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-white mb-6 leading-tight">
+        WhaleStreet: Il Tuo Faro Nella Navigazione Verso l'Indipendenza Finanziaria
+      </h1>
+      <p class="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto mb-10">
+        Inizia il tuo percorso di crescita e raggiungimento della libertà finanziaria attraverso una rotta guidata.
+      </p>
+      <a href="#servizi" class="inline-flex items-center gap-2 bg-accent hover:bg-accent-light text-white font-medium px-8 py-4 rounded-xl transition-all duration-200 shadow-glow hover:shadow-glow-sm">
+        Inizia il tuo percorso
+        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- Servizi (card stile Priorato) -->
+  <section id="servizi" class="relative py-20 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-center mb-12">I nostri servizi</h2>
+      <div class="grid sm:grid-cols-2 gap-6">
+        <article class="glass-card rounded-2xl p-8 border border-white/10 hover:border-white/20 transition-colors">
+          <div class="w-14 h-14 rounded-xl bg-accent/20 flex items-center justify-center mb-6">
+            <i data-lucide="graduation-cap" class="w-7 h-7 text-accent"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-3">Trading Academy</h3>
+          <p class="text-white/80 leading-relaxed">
+            Una scuola in continua evoluzione sull'ecosistema finanziario.
+          </p>
+        </article>
+        <article class="glass-card rounded-2xl p-8 border border-white/10 hover:border-white/20 transition-colors">
+          <div class="w-14 h-14 rounded-xl bg-accent/20 flex items-center justify-center mb-6">
+            <i data-lucide="video" class="w-7 h-7 text-accent"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-3">Masterclass</h3>
+          <p class="text-white/80 leading-relaxed">
+            Sessioni di formazione avanzata in videochiamata di gruppo o dal vivo.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Valori -->
+  <section class="relative py-20 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-center mb-12">I nostri valori</h2>
+      <div class="grid sm:grid-cols-3 gap-6">
+        <div class="glass rounded-xl p-6 text-center border border-white/10">
+          <div class="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="shield-check" class="w-6 h-6 text-accent"></i>
+          </div>
+          <h3 class="font-semibold text-white mb-2">Indipendenza</h3>
+          <p class="text-sm text-white/75">Libertà nelle scelte e nel percorso.</p>
+        </div>
+        <div class="glass rounded-xl p-6 text-center border border-white/10">
+          <div class="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="target" class="w-6 h-6 text-accent"></i>
+          </div>
+          <h3 class="font-semibold text-white mb-2">Strategia</h3>
+          <p class="text-sm text-white/75">Metodo e chiarezza in ogni passo.</p>
+        </div>
+        <div class="glass rounded-xl p-6 text-center border border-white/10">
+          <div class="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="eye" class="w-6 h-6 text-accent"></i>
+          </div>
+          <h3 class="font-semibold text-white mb-2">Consapevolezza</h3>
+          <p class="text-sm text-white/75">Conoscenza e controllo del proprio futuro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contattaci (Footer) -->
+  <footer class="relative pt-16 pb-12 px-4 sm:px-6 lg:px-8 border-t border-white/10">
+    <div class="max-w-xl mx-auto">
+      <h2 class="text-2xl font-semibold text-center mb-8">Contattaci</h2>
+      <form class="space-y-4 mb-12" action="#" method="post">
+        <div>
+          <label for="nome" class="sr-only">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Nome" required class="w-full glass rounded-xl px-4 py-3 text-white placeholder-white/50 border border-white/10 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition">
+        </div>
+        <div>
+          <label for="email" class="sr-only">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" required class="w-full glass rounded-xl px-4 py-3 text-white placeholder-white/50 border border-white/10 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition">
+        </div>
+        <div>
+          <label for="messaggio" class="sr-only">Messaggio</label>
+          <textarea id="messaggio" name="messaggio" rows="4" placeholder="Messaggio" required class="w-full glass rounded-xl px-4 py-3 text-white placeholder-white/50 border border-white/10 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition resize-none"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-accent hover:bg-accent-light text-white font-medium py-3 rounded-xl transition-colors">
+          Invia
+        </button>
+      </form>
+      <div class="flex justify-center gap-6 mb-8">
+        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="text-white/70 hover:text-accent transition-colors" aria-label="YouTube">
+          <i data-lucide="youtube" class="w-6 h-6"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-white/70 hover:text-accent transition-colors" aria-label="Instagram">
+          <i data-lucide="instagram" class="w-6 h-6"></i>
+        </a>
+        <a href="https://t.me" target="_blank" rel="noopener noreferrer" class="text-white/70 hover:text-accent transition-colors" aria-label="Telegram">
+          <i data-lucide="send" class="w-6 h-6"></i>
+        </a>
+      </div>
+      <p class="text-center text-xs text-white/50">
+        Note legali e disclaimer: i contenuti sono a scopo informativo. Nessuna consulenza finanziaria. Investi con consapevolezza.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
