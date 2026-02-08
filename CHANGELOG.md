@@ -9,6 +9,7 @@ Formato: [Data] – Breve descrizione.
 
 ## 2025-02-08
 
+- Sostituita sezione "Contattaci" in home con form newsletter Brevo. Aggiunto ancoraggio `/#newsletter` e link "Iscriviti alla newsletter" in hero.
 - Aggiunta landing page `/aggiorna-profilo` per aggiornamento opzionale dati personali (form Brevo). Pagina di post-iscrizione newsletter. Altezza form aumentata per visibilità completa.
 
 ## 2025-02-06
