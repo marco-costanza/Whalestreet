@@ -9,7 +9,7 @@ Formato: [Data] – Breve descrizione.
 
 ## 2025-02-08
 
-- Aggiunta landing page `aggiorna-profilo.html` per aggiornamento opzionale dati personali (form Brevo). Pagina di post-iscrizione newsletter.
+- Aggiunta landing page `/aggiorna-profilo` per aggiornamento opzionale dati personali (form Brevo). Pagina di post-iscrizione newsletter. Altezza form aumentata per visibilità completa.
 
 ## 2025-02-06
 
