@@ -161,7 +161,7 @@
     </div>
   </section>
 
-  <!-- Newsletter (ancoraggio: /#newsletter) -->
+  <!-- Newsletter (ancoraggio: /#newsletter) - Form Brevo corretto -->
   <section id="newsletter" class="relative pt-16 pb-12 px-4 sm:px-6 lg:px-8 border-t border-white/10" aria-label="Newsletter">
     <div class="max-w-xl mx-auto">
       <div class="sib-form" style="text-align: center;">
@@ -174,6 +174,7 @@
               <span class="sib-form-message-panel__inner-text">Non è stato registrare la tua iscrizione. Si prega di riprovare.</span>
             </div>
           </div>
+          <div></div>
           <div id="success-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:540px;">
             <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
               <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
@@ -182,16 +183,19 @@
               <span class="sib-form-message-panel__inner-text">La tua iscrizione è andata a buon fine.</span>
             </div>
           </div>
-          <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; max-width:540px; margin:0 auto;">
+          <div></div>
+          <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; max-width:540px; margin:0 auto; direction:ltr">
             <form id="sib-form" method="POST" action="https://8b8e18d7.sibforms.com/serve/MUIFAFIuxtZsDR3Ol5BAtSxYNIxPcwo0DyFFNhqRjFdYll_o0dig1t4C-8k2XY1yBMhHEY-9thETBvdOx_Lx2j9n-uaQZVa6zrv1f-HikKsi6iivVeIyJBLawxZrE2L0rXawT-SSj_k829cjq-Tv5WVIxCWJAYv5MWgPyjR1O20X9JMO3OqotqV0OKnfiINMqT9ljfniiaKUgSjJ7w==" data-type="subscription">
               <div style="padding: 8px 0;">
-                <div class="sib-form-block" style="font-size:32px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#3C4858;">
+                <div class="sib-form-block" style="font-size:32px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#3C4858; background-color:transparent;">
                   <p>Resta aggiornato</p>
                 </div>
               </div>
               <div style="padding: 8px 0;">
-                <div class="sib-form-block" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#3C4858;">
-                  <p>Ricevi analisi, guide operative e approfondimenti.</p>
+                <div class="sib-form-block" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#3C4858; background-color:transparent;">
+                  <div class="sib-text-form-block">
+                    <p>Ricevi analisi, guide operative e approfondimenti.</p>
+                  </div>
                 </div>
               </div>
               <div style="padding: 8px 0;">
@@ -199,10 +203,10 @@
                   <div class="form__entry entry_block">
                     <div class="form__label-row">
                       <div class="entry__field">
-                        <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required />
+                        <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required />
                       </div>
                     </div>
-                    <label class="entry__error entry__error--primary" style="font-size:16px; font-family:Helvetica, sans-serif; color:#661d1d;"></label>
+                    <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;"></label>
                   </div>
                 </div>
               </div>
@@ -210,32 +214,32 @@
                 <div class="sib-checkbox-group sib-form-block" data-required="true">
                   <div class="form__entry entry_mcq">
                     <div class="form__label-row">
-                      <label class="entry__label" style="font-weight:700; font-size:16px; font-family:Helvetica, sans-serif; color:#3c4858;" data-required="*">Seleziona le e-mail che ti piacerebbe ricevere</label>
+                      <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; font-family:Helvetica, sans-serif; color:#3c4858;" data-required="*">Seleziona le e-mail che ti piacerebbe ricevere</label>
                       <div>
                         <div class="entry__choice">
                           <label class="checkbox__label">
                             <input type="checkbox" class="input_replaced" name="TIPOLOGIA_DI_NEWS[]" data-value="🎓 Guide e approfondimenti" value="🎓 Guide e approfondimenti" data-required="true" />
                             <span class="checkbox checkbox_tick_positive"></span>
-                            <span style="font-size:16px; font-family:Helvetica, sans-serif; color:#3C4858;">🎓 Guide e approfondimenti</span>
+                            <span style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#3C4858;">🎓 Guide e approfondimenti</span>
                           </label>
                         </div>
                         <div class="entry__choice">
                           <label class="checkbox__label">
                             <input type="checkbox" class="input_replaced" name="TIPOLOGIA_DI_NEWS[]" data-value="🎁 Offerte, sconti e bonus" value="🎁 Offerte, sconti e bonus" data-required="true" />
                             <span class="checkbox checkbox_tick_positive"></span>
-                            <span style="font-size:16px; font-family:Helvetica, sans-serif; color:#3C4858;">🎁 Offerte, sconti e bonus</span>
+                            <span style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#3C4858;">🎁 Offerte, sconti e bonus</span>
                           </label>
                         </div>
                         <div class="entry__choice">
                           <label class="checkbox__label">
                             <input type="checkbox" class="input_replaced" name="TIPOLOGIA_DI_NEWS[]" data-value="📰 News e consigli di attualità" value="📰 News e consigli di attualità" data-required="true" />
                             <span class="checkbox checkbox_tick_positive"></span>
-                            <span style="font-size:16px; font-family:Helvetica, sans-serif; color:#3C4858;">📰 News e consigli di attualità</span>
+                            <span style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#3C4858;">📰 News e consigli di attualità</span>
                           </label>
                         </div>
                       </div>
                     </div>
-                    <label class="entry__error entry__error--primary" style="font-size:16px; font-family:Helvetica, sans-serif; color:#661d1d;"></label>
+                    <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;"></label>
                   </div>
                 </div>
               </div>
@@ -245,40 +249,48 @@
                 </div>
               </div>
               <div style="padding: 8px 0;">
-                <div class="sib-optin sib-form-block">
+                <div class="sib-optin sib-form-block" data-required="true">
                   <div class="form__entry entry_mcq">
                     <div class="form__label-row">
                       <div class="entry__choice">
                         <label>
-                          <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN" />
+                          <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN" required />
                           <span class="checkbox checkbox_tick_positive"></span>
-                          <span style="font-size:14px; font-family:Helvetica, sans-serif; color:#3C4858;"><p>Accetto l'informativa sulla privacy dei dati.</p></span>
+                          <span style="font-size:14px; text-align:left; font-family:Helvetica, sans-serif; color:#3C4858;"><p>Accetto l'informativa sulla privacy dei dati.</p><span data-required="*" style="display: inline;" class="entry__label entry__label_optin"></span></span>
                         </label>
                       </div>
                     </div>
-                    <label class="entry__specification" style="font-size:12px; font-family:Helvetica, sans-serif; color:#8390A4;">Puoi annullare l'iscrizione in qualsiasi momento utilizzando il link nella newsletter.</label>
+                    <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;"></label>
+                    <label class="entry__specification" style="font-size:12px; text-align:left; font-family:Helvetica, sans-serif; color:#8390A4;">Puoi annullare l'iscrizione in qualsiasi momento utilizzando il link nella newsletter.</label>
                   </div>
                 </div>
               </div>
               <div style="padding: 8px 0;">
                 <div class="sib-form-block" style="text-align: left">
-                  <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; font-weight:700; font-family:Helvetica, sans-serif; color:#FFFFFF; background-color:#3E4857; border-radius:3px; border-width:0px;" form="sib-form" type="submit">
-                    <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512"><path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" /></svg>
+                  <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#FFFFFF; background-color:#3E4857; border-radius:3px; border-width:0px;" form="sib-form" type="submit">
+                    <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                      <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+                    </svg>
                     ISCRIVITI
                   </button>
                 </div>
               </div>
               <div style="padding: 8px 0;">
+                <div class="sib-form-block sib-divider-form-block">
+                  <div style="border: 0; border-bottom: 1px solid #E5EDF6"></div>
+                </div>
+              </div>
+              <div style="padding: 8px 0;">
                 <div class="sib-form__declaration" style="direction:ltr">
-                  <div style="font-size:14px; font-family:Helvetica, sans-serif; color:#687484;">
+                  <div style="font-size:14px; text-align:left; font-family:Helvetica, sans-serif; color:#687484; background-color:transparent;">
                     <p>We use Brevo as our marketing platform. By submitting this form you agree that the personal data you provided will be transferred to Brevo for processing in accordance with <a href="https://www.brevo.com/en/legal/privacypolicy/" target="_blank" rel="noopener noreferrer">Brevo's Privacy Policy.</a></p>
                   </div>
                 </div>
               </div>
               <div style="padding: 8px 0;">
-                <div class="g-recaptcha" data-sitekey="6LeGQVwsAAAAAJfpAc4_DywDxMdzyRxlR8M5hMVr" data-callback="invisibleCaptchaCallback" data-size="invisible"></div>
+                <div class="g-recaptcha" data-sitekey="6LeGQVwsAAAAAJfpAc4_DywDxMdzyRxlR8M5hMVr" data-callback="invisibleCaptchaCallback" data-size="invisible" onclick="executeCaptcha"></div>
               </div>
-              <input type="text" name="email_address_check" value="" class="input--hidden" aria-hidden="true" tabindex="-1">
+              <input type="text" name="email_address_check" value="" class="input--hidden">
               <input type="hidden" name="locale" value="en">
             </form>
           </div>
@@ -309,7 +321,8 @@
   <script>
     lucide.createIcons();
   </script>
-  <!-- Brevo newsletter form -->
+  <!-- Brevo newsletter: reCAPTCHA caricato prima così è pronto al submit (evita caricamento infinito) -->
+  <script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
   <script>
     window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
     window.LOCALE = 'en';
@@ -320,6 +333,5 @@
     var AUTOHIDE = Boolean(1);
   </script>
   <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
-  <script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
 </body>
 </html>
