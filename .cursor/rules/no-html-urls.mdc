@@ -1,0 +1,14 @@
+---
+description: URL puliti senza .html — applica sempre (WhaleStreet, Bailout, tutti i progetti)
+alwaysApply: true
+---
+
+# URL senza estensione .html
+
+**SEMPRE** usare URL puliti, mai `.html` nei link.
+
+- Struttura file: `nome-pagina/index.html` → URL `/nome-pagina`
+- Link: `/aggiorna-profilo` ✅ — `aggiorna-profilo.html` ❌
+- La home resta `index.html` nel root, accessibile come `/`
+
+Valido per tutti i progetti (WhaleStreet, Bailout, ecc.).

@@ -1,0 +1,21 @@
+---
+description: Seguire GUIDA.md e README.md; fare sempre commit e push su GitHub dopo le modifiche
+alwaysApply: true
+---
+
+# Regole di progetto e push GitHub
+
+## Riferimento GUIDA.md e README.md
+
+- **Sempre** seguire le indicazioni di **GUIDA.md** e **README.md** (root e, se presenti, per sottoprogetto).
+- Per landing "solo contenuto" da WordPress: usare la procedura in GUIDA.md e le skill indicate (es. `@landing-page-solo-contenuto`, `@webmaster-css-modern`, `@webmaster-html-accessibility`, `@landing-page-creator`).
+- File di workflow: rispettare i nomi e i ruoli (01_Input_..., 03_Output_..., ecc.) dove applicabile.
+
+## Commit e push su GitHub
+
+Dopo **ogni modifica** che l'utente ti chiede di fare:
+
+1. **Commit**: fare `git add` dei file modificati e `git commit` con messaggio chiaro e descrittivo (es. "Aggiunto X", "Corretto Y in Z").
+2. **Push**: fare `git push` per pubblicare i cambiamenti sul remoto (GitHub).
+
+Se il contesto è un sottoprogetto con suo `.git` (es. WhaleStreet, Bailout), eseguire commit e push **in quella cartella**. Se non c'è repo inizializzato o remoto configurato, segnalarlo all'utente invece di forzare il push.
