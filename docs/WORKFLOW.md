@@ -12,7 +12,7 @@ Guida semplice al flusso che usi per aggiornare il sito: **modifiche in Cursor â
 
 | Passo | Cosa succede | Dove lo fai |
 |-------|----------------|-------------|
-| **1. Modifiche** | Cambi testo, immagini, colori in `index.html` (o altri file) | Cursor: chiedi all'AI o modifica a mano |
+| **1. Modifiche** | Cambi testo, immagini, colori nella Homepage (`index.html`) o altri file | Cursor: chiedi all'AI o modifica a mano |
 | **2. Commit** | Salvi una "fotografia" delle modifiche con una descrizione | Cursor: pannello Source Control (icona ramo) o terminale |
 | **3. Push** | Invii i commit dal tuo computer a GitHub | Cursor: pulsante "Sync" o "Push" o "Publish Branch" in Source Control |
 | **4. Vercel** | Vercel vede il nuovo codice su GitHub e aggiorna il sito | Automatico (nessun click) |
@@ -30,7 +30,7 @@ Guida semplice al flusso che usi per aggiornare il sito: **modifiche in Cursor â
 - Esempi da evitare: "fix", "update", "modifiche".
 
 ### âœ… Controllare prima di fare push
-- Apri `index.html` in Cursor e verifica che le modifiche siano quelle che volevi.
+- Apri la Homepage (`index.html`) in Cursor e verifica che le modifiche siano quelle che volevi.
 - Se usi l'anteprima del browser, ricarica la pagina per vedere le ultime modifiche.
 
 ### âœ… Un push = un deploy su Vercel
@@ -41,7 +41,7 @@ Guida semplice al flusso che usi per aggiornare il sito: **modifiche in Cursor â
 ## Come evitare errori
 
 1. **Prima di modificare:** se stai per fare un cambiamento grosso, chiedi a Cursor di fare un commit dello stato attuale. CosÃ¬ hai un "punto di ripristino".
-2. **Dopo le modifiche:** controlla che il sito in locale funzioni (apri `index.html` nel browser).
+2. **Dopo le modifiche:** controlla che il sito in locale funzioni (apri la Homepage `index.html` nel browser).
 3. **Prima del push:** leggi il messaggio di commit e assicurati che descriva bene cosa hai fatto.
 4. **Se qualcosa va storto:** puoi tornare a un commit precedente (in Cursor puoi chiedere: "torna al commit dove avevo fatto X").
 
