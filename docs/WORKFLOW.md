@@ -29,6 +29,12 @@ Guida semplice al flusso che usi per aggiornare il sito: **modifiche in Cursor �
 - Esempi buoni: "Aggiungi logo WhaleStreet", "Correggi link contatti nel footer".
 - Esempi da evitare: "fix", "update", "modifiche".
 
+### ✅ Lavorare in locale e vedere le modifiche in tempo reale
+- **Anteprima senza deploy:** apri la cartella del progetto con un server locale così vedi le modifiche in tempo reale (ricarica la pagina dopo ogni modifica). Due modi:
+  - **In Cursor:** tasto destro su `index.html` → "Open with Live Server" (se hai l’estensione Live Server), oppure dal terminale: `npx serve` e apri `http://localhost:3000`.
+  - **Solo per prova veloce:** apri direttamente `index.html` nel browser (file://); per le sotto-pagine tipo `/conferma-iscrizione` il server locale è meglio.
+- **Commit spesso, push quando sei contento:** puoi fare molti commit in locale (sono il tuo backup). Il push (e quindi il deploy su Vercel) fallo solo quando sei soddisfatto del risultato. Così il sito online non si aggiorna a ogni prova e risparmi deploy inutili.
+
 ### ✅ Controllare prima di fare push
 - Apri la Homepage (`index.html`) in Cursor e verifica che le modifiche siano quelle che volevi.
 - Se usi l'anteprima del browser, ricarica la pagina per vedere le ultime modifiche.

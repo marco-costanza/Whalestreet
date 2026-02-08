@@ -12,7 +12,8 @@ Progetto landing page (HTML/CSS/JS). Modifiche in Cursor → commit → push su 
 1. **Messaggio di commit:** dopo aver applicato modifiche, suggerisci sempre un messaggio di commit in italiano, chiaro e descrittivo (es. "Aggiungi logo WhaleStreet", "Aggiorna testo hero").
 2. **Un commit per modifica logica:** invita a fare commit piccoli e frequenti, uno per ogni cambiamento comprensibile.
 3. **Backup:** i commit sono i backup; non serve creare cartelle "backup" a mano. Ricorda all'utente che può fare commit prima di modifiche grosse per avere un punto di ripristino.
-4. **Commit e push — OBBLIGATORIO:** dopo **ogni** modifica ai file del progetto devi **SEMPRE** eseguire commit e push su GitHub. Nessuna eccezione, a meno che l'utente non dica esplicitamente "non fare push" o "non fare commit". Non concludere mai senza aver fatto commit e push.
+4. **Commit:** dopo ogni modifica ai file del progetto esegui **sempre** il commit (salvataggio locale = backup). Messaggio chiaro in italiano.
+5. **Push:** esegui il push su GitHub **solo quando l'utente è soddisfatto** e lo chiede (es. "pusha", "sono contento pusha", "pubblica"). Se l'utente sta lavorando in locale e vuole vedere le modifiche in tempo reale senza deploy, **non** fare push dopo ogni modifica: fai solo commit. Pusha quando dice che è pronto o quando conclude la sessione di modifiche.
 
 ## Descrizioni
 - Preferisci risposte e messaggi in **italiano** se l'utente scrive in italiano.
