@@ -30,9 +30,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-  <!-- Brevo form: font overrides (opzionale, il form ha già Roboto) -->
+  <!-- Brevo form: testo leggibile su sfondo bianco -->
   <style>
-    #sib-container input::placeholder { font-family: Lexend, Helvetica, sans-serif; }
+    #sib-container input,
+    #sib-container input::placeholder,
+    #sib-container textarea,
+    #sib-container textarea::placeholder { font-family: Lexend, Helvetica, sans-serif; }
+    #sib-container input,
+    #sib-container textarea { color: #3C4858; background-color: #fff; }
+    #sib-container input::placeholder { color: #8390A4; }
+    #sib-container textarea::placeholder { color: #8390A4; }
     #sib-container .sib-form-block p { font-family: Lexend, Helvetica, sans-serif; }
     html { scroll-behavior: smooth; }
     .glass {
